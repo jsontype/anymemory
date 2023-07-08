@@ -1,0 +1,12 @@
+케이스룰
+  컴포넌트명 : PascalCase
+  변수명 : camelCase
+  함수명 : camelCase
+  git branch명 : Kebob Case (feature/add-footer)
+  상수명 : UPPER_CASE
+
+깃플로우
+  master -> develop -> feature/기능명
+
+환경
+  dev -> prd

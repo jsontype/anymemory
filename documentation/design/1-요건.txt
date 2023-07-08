@@ -1,0 +1,34 @@
+개요
+  도메인 : https://anymemory1.vercel.app/admin/dashboard
+
+뭘 ? 
+  일본어 단어장
+
+무엇을 보여줄 것이냐 ?
+  1. 단어 목록이 표시되도록
+    ありがとう：고마워
+  2. 단어의 등록, 삭제, 숙정이 가능하도록
+  3. 깜빡이 기능을 작동할 수 있도록
+  4. 깜빡이 세부 설정을 할 수 있도록
+  5. 암기한 현황을 볼수 있도록
+
+어떻게 만들 것이냐 ?
+  1. DB는 mongoDB
+  2. 백엔드는 REST API
+  3. 프론트엔드는 Next
+
+어떻게 배포할 것이냐 ?
+  1. Vercel
+
+어떻게 테스트 할 것이냐 ?
+  1. UT: JEST 코드작성
+  2. IT: 개발자가 직접 테스트
+  3. CI/CD 적용: Github Actions
+
+어떻게 개발할 것이냐 ?
+  1. CSS: POST CSS
+  2. Node Version: 15 미만
+  3. React Version: 17 미만
+  4. Next Version: 10 미만
+  5. TypeScript Version: 4 미만
+  6. MongoDB Version: 4 미만
