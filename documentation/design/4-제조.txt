@@ -10,3 +10,9 @@
 
 환경
   dev -> prd
+
+일의 배분
+  개발일 할 때 필요한 태스크를 배분 
+  설계하는 사람이 컴포넌트의 정의, 기능구현, API의 정의, 그 순서, 우선순위를 정리를 한다음에, 각 멤버들에게 하나씩 나눠준다.
+
+티켓작성 : https://docs.google.com/spreadsheets/d/12Rnp5evbu7DEbPd8Zx8pDq-LSMVALYsHbAjuB_j_9qs/edit#gid=33011726
