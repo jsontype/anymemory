@@ -16,14 +16,14 @@
 
 */
 // @material-ui/icons
-import Dashboard from "@material-ui/icons/Dashboard";
-import Person from "@material-ui/icons/Person";
-import LibraryBooks from "@material-ui/icons/LibraryBooks";
-import BubbleChart from "@material-ui/icons/BubbleChart";
-import LocationOn from "@material-ui/icons/LocationOn";
-import Notifications from "@material-ui/icons/Notifications";
-import Unarchive from "@material-ui/icons/Unarchive";
-import Language from "@material-ui/icons/Language";
+import Dashboard from "@material-ui/icons/Dashboard"
+import Person from "@material-ui/icons/Person"
+import LibraryBooks from "@material-ui/icons/LibraryBooks"
+import BubbleChart from "@material-ui/icons/BubbleChart"
+import LocationOn from "@material-ui/icons/LocationOn"
+import Notifications from "@material-ui/icons/Notifications"
+import Unarchive from "@material-ui/icons/Unarchive"
+import Language from "@material-ui/icons/Language"
 
 const dashboardRoutes = [
   {
@@ -54,6 +54,30 @@ const dashboardRoutes = [
     path: "/typography",
     name: "Typography",
     rtlName: "طباعة",
+    icon: LibraryBooks,
+
+    layout: "/admin",
+  },
+  {
+    path: "/words1",
+    name: "Words1",
+    rtlName: "Words1",
+    icon: LibraryBooks,
+
+    layout: "/admin",
+  },
+  {
+    path: "/words2",
+    name: "Words2",
+    rtlName: "Words2",
+    icon: LibraryBooks,
+
+    layout: "/admin",
+  },
+  {
+    path: "/words3",
+    name: "Words3",
+    rtlName: "Words3",
     icon: LibraryBooks,
 
     layout: "/admin",
@@ -90,14 +114,6 @@ const dashboardRoutes = [
 
     layout: "/rtl",
   },
-  {
-    path: "/upgrade-to-pro",
-    name: "Upgrade To PRO",
-    rtlName: "التطور للاحترافية",
-    icon: Unarchive,
+]
 
-    layout: "/admin",
-  },
-];
-
-export default dashboardRoutes;
+export default dashboardRoutes

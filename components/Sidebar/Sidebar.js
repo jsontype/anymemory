@@ -1,54 +1,51 @@
 /*eslint-disable*/
-import React from "react";
-import classNames from "classnames";
-import PropTypes from "prop-types";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import React from "react"
+import classNames from "classnames"
+import PropTypes from "prop-types"
+import Link from "next/link"
+import { useRouter } from "next/router"
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
-import Drawer from "@material-ui/core/Drawer";
-import Hidden from "@material-ui/core/Hidden";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
-import Icon from "@material-ui/core/Icon";
+import { makeStyles } from "@material-ui/core/styles"
+import Drawer from "@material-ui/core/Drawer"
+import Hidden from "@material-ui/core/Hidden"
+import List from "@material-ui/core/List"
+import ListItem from "@material-ui/core/ListItem"
+import ListItemText from "@material-ui/core/ListItemText"
+import Icon from "@material-ui/core/Icon"
 // core components
-import AdminNavbarLinks from "components/Navbars/AdminNavbarLinks.js";
-import RTLNavbarLinks from "components/Navbars/RTLNavbarLinks.js";
+import AdminNavbarLinks from "components/Navbars/AdminNavbarLinks.js"
+import RTLNavbarLinks from "components/Navbars/RTLNavbarLinks.js"
 
-import styles from "assets/jss/nextjs-material-dashboard/components/sidebarStyle.js";
+import styles from "assets/jss/nextjs-material-dashboard/components/sidebarStyle.js"
 
 export default function Sidebar(props) {
   // used for checking current route
-  const router = useRouter();
+  const router = useRouter()
   // creates styles for this component
-  const useStyles = makeStyles(styles);
-  const classes = useStyles();
+  const useStyles = makeStyles(styles)
+  const classes = useStyles()
   // verifies if routeName is the one active (in browser input)
   function activeRoute(routeName) {
-    return router.route.indexOf(routeName) > -1 ? true : false;
+    return router.route.indexOf(routeName) > -1 ? true : false
   }
-  const { color, logo, image, logoText, routes } = props;
+  const { color, logo, image, logoText, routes } = props
   var links = (
     <List className={classes.list}>
       {routes.map((prop, key) => {
-        var activePro = " ";
-        var listItemClasses;
-        if (prop.path === "/upgrade-to-pro") {
-          activePro = classes.activePro + " ";
-          listItemClasses = classNames({
-            [" " + classes[color]]: true,
-          });
-        } else {
-          listItemClasses = classNames({
-            [" " + classes[color]]: activeRoute(prop.layout + prop.path),
-          });
-        }
+        var activePro = " "
+        var listItemClasses
+        // if (prop.path === "/upgrade-to-pro") {
+        //   activePro = classes.activePro + " ";
+        //   listItemClasses = classNames({
+        //     [" " + classes[color]]: true,
+        //   });
+        // } else
+        listItemClasses = classNames({
+          [" " + classes[color]]: activeRoute(prop.layout + prop.path),
+        })
         const whiteFontClasses = classNames({
-          [" " + classes.whiteFont]:
-            activeRoute(prop.layout + prop.path) ||
-            prop.path === "/upgrade-to-pro",
-        });
+          [" " + classes.whiteFont]: activeRoute(prop.layout + prop.path),
+        })
         return (
           <Link href={prop.layout + prop.path} key={key}>
             <a className={activePro + classes.item}>
@@ -78,10 +75,10 @@ export default function Sidebar(props) {
               </ListItem>
             </a>
           </Link>
-        );
+        )
       })}
     </List>
-  );
+  )
   var brand = (
     <div className={classes.logo}>
       <a
@@ -97,7 +94,7 @@ export default function Sidebar(props) {
         {logoText}
       </a>
     </div>
-  );
+  )
   return (
     <div>
       <Hidden mdUp implementation="css">
@@ -150,7 +147,7 @@ export default function Sidebar(props) {
         </Drawer>
       </Hidden>
     </div>
-  );
+  )
 }
 
 Sidebar.propTypes = {
@@ -169,4 +166,4 @@ Sidebar.propTypes = {
   logoText: PropTypes.string,
   routes: PropTypes.arrayOf(PropTypes.object),
   open: PropTypes.bool,
-};
+}
