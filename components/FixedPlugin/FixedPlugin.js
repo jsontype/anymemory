@@ -1,24 +1,24 @@
 /*eslint-disable*/
-import React, { Component } from "react";
+import React, { Component } from "react"
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
+import PropTypes from "prop-types"
 // nodejs library that concatenates classes
-import classnames from "classnames";
+import classnames from "classnames"
 
-import imagine1 from "assets/img/sidebar-1.jpg";
-import imagine2 from "assets/img/sidebar-2.jpg";
-import imagine3 from "assets/img/sidebar-3.jpg";
-import imagine4 from "assets/img/sidebar-4.jpg";
+import imagine1 from "assets/img/sidebar-1.jpg"
+import imagine2 from "assets/img/sidebar-2.jpg"
+import imagine3 from "assets/img/sidebar-3.jpg"
+import imagine4 from "assets/img/sidebar-4.jpg"
 
-import Button from "components/CustomButtons/Button.js";
+import Button from "components/CustomButtons/Button.js"
 
 export default function FixedPlugin(props) {
-  const [classes, setClasses] = React.useState("dropdown show");
-  const [bg_checked, setBg_checked] = React.useState(true);
-  const [bgImage, setBgImage] = React.useState(props.bgImage);
+  const [classes, setClasses] = React.useState("dropdown show")
+  const [bg_checked, setBg_checked] = React.useState(true)
+  const [bgImage, setBgImage] = React.useState(props.bgImage)
   const handleClick = () => {
-    props.handleFixedClick();
-  };
+    props.handleFixedClick()
+  }
   return (
     <div
       className={classnames("fixed-plugin", {
@@ -30,7 +30,7 @@ export default function FixedPlugin(props) {
           <i className="fa fa-cog fa-2x" />
         </div>
         <ul className="dropdown-menu">
-          <li className="header-title">SIDEBAR FILTERS</li>
+          <li className="header-title">SIDEBAR FILTERS111</li>
           <li className="adjustments-line">
             <a className="switch-trigger">
               <div>
@@ -42,7 +42,7 @@ export default function FixedPlugin(props) {
                   }
                   data-color="white"
                   onClick={() => {
-                    props.handleColorClick("white");
+                    props.handleColorClick("white")
                   }}
                 />
                 <span
@@ -53,7 +53,7 @@ export default function FixedPlugin(props) {
                   }
                   data-color="purple"
                   onClick={() => {
-                    props.handleColorClick("purple");
+                    props.handleColorClick("purple")
                   }}
                 />
                 <span
@@ -64,7 +64,7 @@ export default function FixedPlugin(props) {
                   }
                   data-color="blue"
                   onClick={() => {
-                    props.handleColorClick("blue");
+                    props.handleColorClick("blue")
                   }}
                 />
                 <span
@@ -75,7 +75,7 @@ export default function FixedPlugin(props) {
                   }
                   data-color="green"
                   onClick={() => {
-                    props.handleColorClick("green");
+                    props.handleColorClick("green")
                   }}
                 />
                 <span
@@ -86,7 +86,7 @@ export default function FixedPlugin(props) {
                   }
                   data-color="red"
                   onClick={() => {
-                    props.handleColorClick("red");
+                    props.handleColorClick("red")
                   }}
                 />
                 <span
@@ -97,7 +97,7 @@ export default function FixedPlugin(props) {
                   }
                   data-color="orange"
                   onClick={() => {
-                    props.handleColorClick("orange");
+                    props.handleColorClick("orange")
                   }}
                 />
               </div>
@@ -108,8 +108,8 @@ export default function FixedPlugin(props) {
             <a
               className="img-holder switch-trigger"
               onClick={() => {
-                setBgImage(imagine1);
-                props.handleImageClick(imagine1);
+                setBgImage(imagine1)
+                props.handleImageClick(imagine1)
               }}
             >
               <img src={imagine1} alt="..." />
@@ -119,8 +119,8 @@ export default function FixedPlugin(props) {
             <a
               className="img-holder switch-trigger"
               onClick={() => {
-                setBgImage(imagine2);
-                props.handleImageClick(imagine2);
+                setBgImage(imagine2)
+                props.handleImageClick(imagine2)
               }}
             >
               <img src={imagine2} alt="..." />
@@ -130,8 +130,8 @@ export default function FixedPlugin(props) {
             <a
               className="img-holder switch-trigger"
               onClick={() => {
-                setBgImage(imagine3);
-                props.handleImageClick(imagine3);
+                setBgImage(imagine3)
+                props.handleImageClick(imagine3)
               }}
             >
               <img src={imagine3} alt="..." />
@@ -141,8 +141,8 @@ export default function FixedPlugin(props) {
             <a
               className="img-holder switch-trigger"
               onClick={() => {
-                setBgImage(imagine4);
-                props.handleImageClick(imagine4);
+                setBgImage(imagine4)
+                props.handleImageClick(imagine4)
               }}
             >
               <img src={imagine4} alt="..." />
@@ -187,7 +187,7 @@ export default function FixedPlugin(props) {
         </ul>
       </div>
     </div>
-  );
+  )
 }
 
 FixedPlugin.propTypes = {
@@ -205,4 +205,4 @@ FixedPlugin.propTypes = {
   ]),
   handleColorClick: PropTypes.func,
   handleImageClick: PropTypes.func,
-};
+}
