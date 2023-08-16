@@ -73,9 +73,9 @@ function RTLPage() {
               <CardIcon color="warning">
                 <Icon>content_copy</Icon>
               </CardIcon>
-              <p className={classes.cardCategory}>저장공간</p>
+              <p className={classes.cardCategory}>覚えた単語</p>
               <h3 className={classes.cardTitle}>
-                49/50 <small>MB</small>
+                49/50 <small></small>
               </h3>
             </CardHeader>
             <CardFooter stats>
@@ -84,7 +84,7 @@ function RTLPage() {
                   <Warning />
                 </Danger>
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                  فضای بیشتری داشته باشید...
+                  プレミアム会員になる
                 </a>
               </div>
             </CardFooter>
@@ -96,13 +96,13 @@ function RTLPage() {
               <CardIcon color="success">
                 <Store />
               </CardIcon>
-              <p className={classes.cardCategory}>سود</p>
-              <h3 className={classes.cardTitle}>$34,245</h3>
+              <p className={classes.cardCategory}>ああ</p>
+              <h3 className={classes.cardTitle}>34,245</h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
                 <DateRange />
-                ۲۴ ساعت اخیر
+                あああ
               </div>
             </CardFooter>
           </Card>
@@ -113,13 +113,13 @@ function RTLPage() {
               <CardIcon color="danger">
                 <Icon>info_outline</Icon>
               </CardIcon>
-              <p className={classes.cardCategory}>مشکلات حل شده</p>
+              <p className={classes.cardCategory}>あああ</p>
               <h3 className={classes.cardTitle}>75</h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
                 <LocalOffer />
-                توسط گیت‌هاب
+                あああ
               </div>
             </CardFooter>
           </Card>
@@ -130,13 +130,13 @@ function RTLPage() {
               <CardIcon color="info">
                 <Accessibility />
               </CardIcon>
-              <p className={classes.cardCategory}>دنبال‌کننده</p>
+              <p className={classes.cardCategory}>ああああ</p>
               <h3 className={classes.cardTitle}>+245</h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
                 <Update />
-                هم‌اکنون
+                ああああ
               </div>
             </CardFooter>
           </Card>
@@ -155,17 +155,18 @@ function RTLPage() {
               />
             </CardHeader>
             <CardBody>
-              <h4 className={classes.cardTitle}>فروش روزانه</h4>
+              <h4 className={classes.cardTitle}>あああああ</h4>
               <p className={classes.cardCategory}>
                 <span className={classes.successText}>
                   <ArrowUpward className={classes.upArrowCardCategory} /> 55%
                 </span>{" "}
-                رشد در فروش امروز.
+                あああああ
               </p>
             </CardBody>
             <CardFooter chart>
               <div className={classes.stats}>
-                <AccessTime /> ۴ دقیقه پیش
+                <AccessTime />
+                ああああああ
               </div>
             </CardFooter>
           </Card>
@@ -183,12 +184,12 @@ function RTLPage() {
               />
             </CardHeader>
             <CardBody>
-              <h4 className={classes.cardTitle}>دنبال کننده‌های ایمیلی</h4>
-              <p className={classes.cardCategory}>کارایی آخرین کمپین</p>
+              <h4 className={classes.cardTitle}>ああああああ</h4>
+              <p className={classes.cardCategory}>ああああああ</p>
             </CardBody>
             <CardFooter chart>
               <div className={classes.stats}>
-                <AccessTime /> کمپین دو روز پیش ارسال شد
+                <AccessTime /> ああああああ
               </div>
             </CardFooter>
           </Card>
@@ -205,12 +206,12 @@ function RTLPage() {
               />
             </CardHeader>
             <CardBody>
-              <h4 className={classes.cardTitle}>وظایف انجام شده</h4>
-              <p className={classes.cardCategory}>کارایی آخرین کمپین</p>
+              <h4 className={classes.cardTitle}>あああああああ</h4>
+              <p className={classes.cardCategory}>あああああああ</p>
             </CardBody>
             <CardFooter chart>
               <div className={classes.stats}>
-                <AccessTime /> کمپین دو روز پیش ارسال شد
+                <AccessTime /> ああああああああ
               </div>
             </CardFooter>
           </Card>
@@ -219,12 +220,12 @@ function RTLPage() {
       <GridContainer>
         <GridItem xs={12} sm={12} md={6}>
           <CustomTabs
-            title="وظایف:"
+            title="ああああああああ"
             headerColor="primary"
             rtlActive
             tabs={[
               {
-                tabName: "باگ‌ها",
+                tabName: "ああああああああ",
                 tabIcon: BugReport,
                 tabContent: (
                   <Tasks
@@ -236,7 +237,7 @@ function RTLPage() {
                 ),
               },
               {
-                tabName: "وبسایت",
+                tabName: "ああああああ",
                 tabIcon: Code,
                 tabContent: (
                   <Tasks
@@ -248,7 +249,7 @@ function RTLPage() {
                 ),
               },
               {
-                tabName: "سرور",
+                tabName: "ああああああ",
                 tabIcon: Cloud,
                 tabContent: (
                   <Tasks
@@ -265,20 +266,18 @@ function RTLPage() {
         <GridItem xs={12} sm={12} md={6}>
           <Card>
             <CardHeader color="warning">
-              <h4 className={classes.cardTitleWhite}>آمار کارکنان</h4>
-              <p className={classes.cardCategoryWhite}>
-                کارکنان جدید از ۱۵ آبان ۱۳۹۶
-              </p>
+              <h4 className={classes.cardTitleWhite}>ああああああ</h4>
+              <p className={classes.cardCategoryWhite}>ななななな</p>
             </CardHeader>
             <CardBody>
               <Table
                 tableHeaderColor="warning"
-                tableHead={["کد", "نام", "حقوق", "استان"]}
+                tableHead={["aaa", "bbb", "ccc", "ddd"]}
                 tableData={[
-                  ["1", "احمد حسینی	", "$36,738", "مازندران"],
-                  ["2", "مینا رضایی	", "$23,789", "گلستان"],
-                  ["3", "مبینا احمدپور	", "$56,142", "تهران"],
-                  ["4", "جلال آقایی	", "$38,735", "شهرکرد"],
+                  ["1", "abc", "abc", "abc"],
+                  ["2", "abc", "abc", "abc"],
+                  ["3", "abc", "abc", "abc"],
+                  ["4", "abc", "abc", "abc"],
                 ]}
               />
             </CardBody>
@@ -291,23 +290,23 @@ function RTLPage() {
             <CardHeader color="primary">
               <h4 className={classes.cardTitleWhite}>اعلان ها</h4>
               <p className={classes.cardCategoryWhite}>
-                يدويا من قبل أصدقائنا من{" "}
+                ああ{" "}
                 <a
                   target="_blank"
                   href="https://material-ui-next.com/?ref=creativetime"
                 >
-                  واجهة المستخدم المادية
+                  ああ
                 </a>{" "}
                 ونصب من قبل{" "}
                 <a
                   target="_blank"
                   href="https://www.creative-tim.com/?ref=njsmd-rtl-page"
                 >
-                  الإبداعية تيم
+                  Word Memory
                 </a>
-                . يرجى التحقق من{" "}
+                ああああ{" "}
                 <a href="#pablo" target="_blank">
-                  وثائق كاملة
+                  ああああああ{" "}
                 </a>
                 .
               </p>

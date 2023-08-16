@@ -53,9 +53,9 @@ function Dashboard() {
               <CardIcon color="warning">
                 <Icon>content_copy</Icon>
               </CardIcon>
-              <p className={classes.cardCategory}>저장공간</p>
+              <p className={classes.cardCategory}>오늘 외운 단어</p>
               <h3 className={classes.cardTitle}>
-                49/50 <small>MB</small>
+                49/50 <small>개</small>
               </h3>
             </CardHeader>
             <CardFooter stats>
@@ -76,13 +76,13 @@ function Dashboard() {
               <CardIcon color="dark">
                 <Store />
               </CardIcon>
-              <p className={classes.cardCategory}>Revenue</p>
-              <h3 className={classes.cardTitle}>$34,245</h3>
+              <p className={classes.cardCategory}>보상</p>
+              <h3 className={classes.cardTitle}>34,245</h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
                 <DateRange />
-                Last 24 Hours
+                지난 24 시간
               </div>
             </CardFooter>
           </Card>
