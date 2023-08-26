@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "word": "単語を追加してください",
+    "meaning": "단어를 추가해주세요.",
+    "checked": false
+  },
+  {
+    "id": 2,
+    "word": "メートル",
+    "meaning": "메-토루 미터",
+    "checked": false
+  },
+  {
+    "id": 3,
+    "word": "センチメートル",
+    "meaning": "센치메-토루 센티미터",
+    "checked": false
+  },
+  {
+    "id": 4,
+    "word": "能動",
+    "meaning": "노우도우 능동",
+    "checked": false
+  },
+  {
+    "id": 5,
+    "word": "手動",
+    "meaning": "슈도우 수동",
+    "checked": false
+  },
+  {
+    "id": 6,
+    "word": "お揃いですか？",
+    "meaning": "おそろいですか？ (회의)모두 모였습니까?",
+    "checked": false
+  },
+  {
+    "id": 7,
+    "word": "絶えず",
+    "meaning": "たえず 꾸준히, 끊임없이",
+    "checked": false
+  }
+]
