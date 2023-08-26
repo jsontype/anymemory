@@ -1,25 +1,5 @@
 import React, { useState, useEffect, useRef } from "react"
 
-/*
-  투두리스트
-  anymemory1\pages\admin\words.js
-  1. 단어장 기록 위에 패딩 좀 줄 것
-  1. 스페이스, 백스페이스가 아니라, 1, 2 키를 사용할 것
-  1. word, meaning이 함께 나오는 게 아니라, 3초마다 바뀌도록 로직을 수정할 것
-  1. 단어장 인풋을 여러개 두고 라디오버튼으로 선택할 수 있게 할 것
-  1. 수동시 얼럿창을 notification.js 참조해서 이걸로 얼럿창으로 바꾸고, 해당 파일 삭제하기
-
-  anymemory1\pages\admin\table-list.js
-  1. 글로벌 스테이트를 도입하여, 설정앱에서 word, meaning 역순 설정을 구현
-  1. 그 외 설정들을 여기 투두리스트 이슈에 추가할 것
-
-  dashboard.js
-  1. 한국어 대쉬보드 만들기
-
-  rtl-page.js
-  1. 일본어 대쉬보드 만들기
-*/
-
 // CSS
 import styles from "./styles/words3.js"
 // @material-ui/core components
@@ -50,10 +30,7 @@ function Words3Page() {
       id: 1,
       word: "単語追加してください",
       meaning: "단어를 추가해주세요.",
-    },
-    { id: 2, word: "お疲れ様です。", meaning: "수고하십니다." },
-    { id: 3, word: "ご存知でしょうか？", meaning: "알고 계십니까? (존경어)" },
-    { id: 4, word: "分かりかねます。", meaning: "잘 모르겠습니다. (존경어)" },
+    }
   ])
   const [count, setCount] = useState(1)
   const [checked, setChecked] = useState(true)
